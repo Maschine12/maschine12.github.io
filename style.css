@@ -83,9 +83,9 @@ h2::after{content:"";flex:1;height:1px;background:var(--border);align-self:cente
 .visit svg{width:13px;height:13px}
 .card>p{flex:1}
 .tech{list-style:none;padding:0;margin:4px 0 0;display:flex;flex-wrap:wrap;gap:8px}
-.tech li{display:inline-flex;align-items:center;gap:7px;padding:5px 10px;border:1px solid var(--border);border-radius:8px;background:rgba(222,222,222,.04);font:500 12.5px var(--f-mono);color:var(--text);transition:border-color .2s}
+.tech li{display:inline-flex;align-items:center;gap:7px;padding:5px 10px;border:1px solid var(--border);border-radius:8px;background:rgba(222,222,222,.07);font:600 12.5px var(--f-mono);color:var(--text);transition:border-color .2s}
 .tech li:hover{border-color:var(--orange)}
-.tech img{width:16px;height:16px}
+.tech img{width:18px;height:18px}
 @media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .visit{color:var(--black);border-bottom-color:var(--orange)} :root:not([data-theme="dark"]) .ico{background:var(--orange);color:var(--black)}}
 .tags{font:500 12.5px/1.7 var(--f-mono)!important;color:var(--accent-text)!important;margin:0!important}
 .note{color:var(--muted);font-size:14px;margin-top:18px}
