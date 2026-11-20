@@ -45,7 +45,7 @@
   </div>
   <div class="stats">
     <div><strong>−81 %</strong><span>memoria tras corregir un leak en Go</span></div>
-    <div><strong>11</strong><span>provincias en GeObras</span></div>
+    <div><strong>11</strong><span>provincias en Supervisión de Obras</span></div>
     <div><strong>6</strong><span>sistemas en producción</span></div>
     <div><strong>k3s</strong><span>GitOps con Argo CD</span></div>
   </div>
@@ -57,37 +57,42 @@
   <h2><span class="num">01</span>Proyectos</h2>
   <div class="grid">
     <article class="card">
-      <h3>🗺️ GeObras</h3>
+      <div class="card-head"><span class="ico"><i data-lucide="hard-hat"></i></span><h3>Sistema de Supervisión</h3><a class="visit" href="https://supervision.regionayacucho.gob.pe/" target="_blank" rel="noopener">Ver sitio<i data-lucide="external-link"></i></a></div>
       <p>Plataforma de seguimiento de obras públicas de 11 provincias: mapa georreferenciado con relieve 3D, expediente técnico, dashboards de avance, API de datos abiertos y app móvil para la asistencia del personal de obra. <b>Lideré su desarrollo.</b></p>
-      <p class="tags">Go · Fiber · GORM · Next.js · Flutter · PostgreSQL · MinIO · Kafka</p>
+      <ul class="tech"><li><img data-slug="go" src="https://cdn.simpleicons.org/go/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Go</li><li><img data-slug="nextdotjs" src="https://cdn.simpleicons.org/nextdotjs/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Next.js</li><li><img data-slug="flutter" src="https://cdn.simpleicons.org/flutter/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Flutter</li><li><img data-slug="postgresql" src="https://cdn.simpleicons.org/postgresql/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">PostgreSQL</li><li><img data-slug="minio" src="https://cdn.simpleicons.org/minio/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">MinIO</li><li><img data-slug="apachekafka" src="https://cdn.simpleicons.org/apachekafka/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Kafka</li><li><img data-slug="docker" src="https://cdn.simpleicons.org/docker/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Docker</li><li><img data-slug="traefikproxy" src="https://cdn.simpleicons.org/traefikproxy/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Traefik</li><li><img data-slug="nginx" src="https://cdn.simpleicons.org/nginx/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Nginx</li></ul>
     </article>
     <article class="card">
-      <h3>🕒 SISCORE</h3>
+      <div class="card-head"><span class="ico"><i data-lucide="fingerprint"></i></span><h3>SISCORE</h3><a class="visit" href="https://siscore.regionayacucho.gob.pe/" target="_blank" rel="noopener">Vía intranet (SSO)<i data-lucide="external-link"></i></a></div>
       <p>Asistencia biométrica multisede. Implementé en Go el protocolo de los relojes ZKTeco (iClock/ADMS) e hice ingeniería inversa de la API de BioTime para sincronizar marcaciones automáticamente y recuperar las de equipos desconectados. Base de mi tesis.</p>
-      <p class="tags">Go · Fiber · Next.js · PostgreSQL · RBAC</p>
+      <ul class="tech"><li><img data-slug="go" src="https://cdn.simpleicons.org/go/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Go</li><li><img data-slug="nextdotjs" src="https://cdn.simpleicons.org/nextdotjs/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Next.js</li><li><img data-slug="postgresql" src="https://cdn.simpleicons.org/postgresql/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">PostgreSQL</li><li><img data-slug="docker" src="https://cdn.simpleicons.org/docker/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Docker</li><li><img data-slug="traefikproxy" src="https://cdn.simpleicons.org/traefikproxy/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Traefik</li><li><img data-slug="nginx" src="https://cdn.simpleicons.org/nginx/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Nginx</li></ul>
     </article>
     <article class="card">
-      <h3>📈 Observabilidad</h3>
-      <p>Monitoreo con Prometheus y Grafana para las instancias de un sistema de gestión documental en sedes, hospitales y redes de salud. Dashboards generados por script, uno por instancia.</p>
-      <p class="tags">Prometheus · Grafana · pprof · Go runtime metrics</p>
-    </article>
-    <article class="card">
-      <h3>☸️ Plataforma GitOps y backups</h3>
-      <p>Réplica de documentos entre sedes y la sede central sobre k3s con Kustomize y Argo CD, políticas Kyverno, red privada WireGuard y un procesador de backups propio en Rust.</p>
-      <p class="tags">k3s · Argo CD · Kustomize · Kyverno · WireGuard · Rust · GitHub Actions</p>
-    </article>
-    <article class="card">
-      <h3>🔑 Intranet, SSO e interoperabilidad</h3>
+      <div class="card-head"><span class="ico"><i data-lucide="key-round"></i></span><h3>Intranet, SSO e interoperabilidad</h3><a class="visit" href="https://intranet.regionayacucho.gob.pe/" target="_blank" rel="noopener">Ver sitio<i data-lucide="external-link"></i></a></div>
       <p>Inicio de sesión único con Zitadel (OIDC/PKCE), bus de eventos Kafka seguro (SASL/SCRAM, ACLs) y API de interoperabilidad entre instituciones con JWT, API keys y auditoría.</p>
-      <p class="tags">Go · Gin · Zitadel · Kafka · Astro</p>
+      <ul class="tech"><li><img data-slug="go" src="https://cdn.simpleicons.org/go/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Go</li><li><img data-slug="astro" src="https://cdn.simpleicons.org/astro/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Astro</li><li>Zitadel</li><li><img data-slug="apachekafka" src="https://cdn.simpleicons.org/apachekafka/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Kafka</li><li><img data-slug="docker" src="https://cdn.simpleicons.org/docker/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Docker</li><li><img data-slug="traefikproxy" src="https://cdn.simpleicons.org/traefikproxy/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Traefik</li><li><img data-slug="nginx" src="https://cdn.simpleicons.org/nginx/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Nginx</li></ul>
     </article>
     <article class="card">
-      <h3>🦀 Firmador digital en Rust</h3>
+      <div class="card-head"><span class="ico"><i data-lucide="life-buoy"></i></span><h3>GLPI: mesa de ayuda TI</h3><a class="visit" href="https://glpi.regionayacucho.gob.pe/" target="_blank" rel="noopener">Ver sitio<i data-lucide="external-link"></i></a></div>
+      <p>Implementé y desplegué GLPI como mesa de ayuda e inventario de TI de la institución: gestión de tickets e incidencias y control de activos.</p>
+      <ul class="tech"><li>GLPI</li><li><img data-slug="php" src="https://cdn.simpleicons.org/php/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">PHP</li><li><img data-slug="mariadb" src="https://cdn.simpleicons.org/mariadb/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">MariaDB</li><li><img data-slug="docker" src="https://cdn.simpleicons.org/docker/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Docker</li><li><img data-slug="traefikproxy" src="https://cdn.simpleicons.org/traefikproxy/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Traefik</li><li><img data-slug="nginx" src="https://cdn.simpleicons.org/nginx/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Nginx</li></ul>
+    </article>
+    <article class="card">
+      <div class="card-head"><span class="ico"><i data-lucide="activity"></i></span><h3>Observabilidad</h3></div>
+      <p>Monitoreo con Prometheus y Grafana para las instancias de un sistema de gestión documental en sedes, hospitales y redes de salud. Dashboards generados por script, uno por instancia.</p>
+      <ul class="tech"><li><img data-slug="prometheus" src="https://cdn.simpleicons.org/prometheus/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Prometheus</li><li><img data-slug="grafana" src="https://cdn.simpleicons.org/grafana/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Grafana</li><li><img data-slug="go" src="https://cdn.simpleicons.org/go/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Go</li><li><img data-slug="docker" src="https://cdn.simpleicons.org/docker/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Docker</li></ul>
+    </article>
+    <article class="card">
+      <div class="card-head"><span class="ico"><i data-lucide="git-branch"></i></span><h3>Plataforma GitOps y backups</h3></div>
+      <p>Réplica de documentos entre sedes y la sede central sobre k3s con Kustomize y Argo CD, políticas Kyverno, red privada WireGuard y un procesador de backups propio en Rust.</p>
+      <ul class="tech"><li><img data-slug="k3s" src="https://cdn.simpleicons.org/k3s/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">k3s</li><li><img data-slug="argo" src="https://cdn.simpleicons.org/argo/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Argo CD</li><li>Kustomize</li><li>Kyverno</li><li><img data-slug="wireguard" src="https://cdn.simpleicons.org/wireguard/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">WireGuard</li><li><img data-slug="rust" src="https://cdn.simpleicons.org/rust/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Rust</li><li><img data-slug="githubactions" src="https://cdn.simpleicons.org/githubactions/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">GitHub Actions</li></ul>
+    </article>
+    <article class="card">
+      <div class="card-head"><span class="ico"><i data-lucide="file-signature"></i></span><h3>Firmador digital en Rust</h3></div>
       <p>Proyecto personal: firma PAdES de PDF, firma con DNIe (PKCS#11) y validación de la cadena de certificados, con un análisis de brechas frente a la guía de acreditación de INDECOPI.</p>
-      <p class="tags">Rust · PAdES · PKCS#11 · PKI</p>
+      <ul class="tech"><li><img data-slug="rust" src="https://cdn.simpleicons.org/rust/DEDEDE" alt="" width="18" height="18" loading="lazy" onerror="this.remove()">Rust</li><li>PAdES</li><li>PKCS#11</li></ul>
     </article>
   </div>
-  <p class="note">La mayoría de estos repositorios son privados de la institución. Con gusto explico la arquitectura en una entrevista.</p>
+  <p class="note">Algunos sistemas requieren cuenta institucional. El código es privado de la institución; con gusto explico la arquitectura en una entrevista.</p>
 </section>
 
 <section id="casos">
@@ -135,5 +140,10 @@
 </main>
 
 <footer>© 2026 Richard Bruno Huaman Peralta · Ayacucho, Perú</footer>
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<script>
+try{lucide.createIcons();}catch(e){}
+(function(){var m=window.matchMedia&&matchMedia('(prefers-color-scheme: light)');function f(){var c=m&&m.matches?'171717':'DEDEDE';document.querySelectorAll('.tech img[data-slug]').forEach(function(i){i.src='https://cdn.simpleicons.org/'+i.dataset.slug+'/'+c;});}if(m){f();m.addEventListener&&m.addEventListener('change',f);}})();
+</script>
 </body>
 </html>

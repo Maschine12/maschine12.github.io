@@ -73,6 +73,20 @@ h2::after{content:"";flex:1;height:1px;background:var(--border);align-self:cente
 .card h3,.case h3{font:700 20px var(--f-head);margin:0 0 10px}
 .card p{margin:0 0 12px;color:var(--muted)}
 .card p b{color:var(--text)}
+.card{display:flex;flex-direction:column}
+.card-head{display:flex;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap}
+.card-head h3{margin:0;flex:1;min-width:0}
+.ico{width:40px;height:40px;flex:none;border-radius:10px;background:rgba(242,86,35,.12);color:var(--orange);display:grid;place-items:center}
+.ico svg{width:20px;height:20px}
+.visit{font:600 12.5px var(--f-mono);color:var(--orange);text-decoration:none;display:inline-flex;align-items:center;gap:5px;border-bottom:1px solid transparent;white-space:nowrap}
+.visit:hover{border-bottom-color:var(--orange)}
+.visit svg{width:13px;height:13px}
+.card>p{flex:1}
+.tech{list-style:none;padding:0;margin:4px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.tech li{display:inline-flex;align-items:center;gap:7px;padding:5px 10px;border:1px solid var(--border);border-radius:8px;background:rgba(222,222,222,.04);font:500 12.5px var(--f-mono);color:var(--text);transition:border-color .2s}
+.tech li:hover{border-color:var(--orange)}
+.tech img{width:16px;height:16px}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .visit{color:var(--black);border-bottom-color:var(--orange)} :root:not([data-theme="dark"]) .ico{background:var(--orange);color:var(--black)}}
 .tags{font:500 12.5px/1.7 var(--f-mono)!important;color:var(--accent-text)!important;margin:0!important}
 .note{color:var(--muted);font-size:14px;margin-top:18px}
 
