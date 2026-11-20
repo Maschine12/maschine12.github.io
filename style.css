@@ -1,0 +1,57 @@
+:root{
+  --bg:#0d1117; --surface:#161b22; --border:#30363d;
+  --text:#e6edf3; --muted:#9da7b3; --accent:#00f5d4; --accent2:#7928ca;
+}
+@media (prefers-color-scheme: light){
+  :root{--bg:#ffffff; --surface:#f6f8fa; --border:#d0d7de; --text:#1f2328; --muted:#59636e; --accent:#0a8f7d; --accent2:#6a1fb5;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 "Segoe UI",system-ui,-apple-system,sans-serif}
+a{color:var(--accent)}
+.accent{color:var(--accent)}
+.hero{background:linear-gradient(135deg,#0f0c29 0%,#302b63 55%,#7928ca 100%);color:#fff}
+.nav{max-width:1080px;margin:0 auto;padding:18px 16px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:22px}
+.links a{color:#fff;text-decoration:none;margin-left:18px;opacity:.85}
+.links a:hover{opacity:1}
+.hero-body{max-width:1080px;margin:0 auto;padding:48px 16px 72px}
+.hero .accent{color:#00f5d4}
+.kicker{margin:0;color:#00f5d4;font-family:"Fira Code",monospace}
+h1{font-size:clamp(34px,6vw,56px);margin:4px 0 6px;line-height:1.1}
+.role{font-size:clamp(17px,2.4vw,21px);margin:0 0 18px}
+.lead{max-width:720px;font-size:18px;opacity:.92}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;border:1px solid rgba(255,255,255,.4);color:inherit;text-decoration:none;font-weight:600}
+.btn.primary{background:#00f5d4;color:#0d1117;border-color:#00f5d4}
+.contact .btn{border-color:var(--border)}
+.contact .btn.primary{background:var(--accent);border-color:var(--accent);color:#0d1117}
+.status{margin-top:18px;opacity:.9}
+main{max-width:1080px;margin:0 auto;padding:0 16px}
+section{padding:56px 0 8px}
+h2{font-size:28px;margin:0 0 22px;border-left:4px solid var(--accent);padding-left:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.card,.case,.stack>div{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px}
+.card h3{margin:0 0 8px}
+.card p{margin:0 0 10px;color:var(--muted)}
+.card p b{color:var(--text)}
+.tags{font-family:"Fira Code",monospace;font-size:13px;color:var(--accent)!important}
+.note{color:var(--muted);font-size:14px;margin-top:16px}
+.case{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;margin-bottom:16px}
+.case.simple{display:block}
+.case h3{margin-top:0}
+.case img{width:100%;border-radius:8px;border:1px solid var(--border)}
+.metrics{list-style:none;padding:0;margin:14px 0 0}
+.metrics li{margin:6px 0;color:var(--muted)}
+.metrics span{display:inline-block;min-width:150px;font-weight:700;color:var(--accent)}
+.stack{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.stack h4{margin:0 0 6px;color:var(--accent)}
+.stack p{margin:0;color:var(--muted)}
+.contact{text-align:center;padding-bottom:56px}
+.contact h2{display:inline-block}
+.contact .cta{justify-content:center}
+footer{text-align:center;color:var(--muted);font-size:14px;padding:24px 16px;border-top:1px solid var(--border)}
+@media (max-width:760px){
+  .case{grid-template-columns:1fr}
+  .links a{margin-left:12px}
+}
