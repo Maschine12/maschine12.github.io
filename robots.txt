@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maschine12.github.io/sitemap.xml
