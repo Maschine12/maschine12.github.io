@@ -3,8 +3,8 @@
   var light = window.matchMedia && matchMedia('(prefers-color-scheme: light)');
 
   /* ---------- logos con color de marca (legibles en oscuro/claro) ---------- */
-  var D = {postgresql:'6B8FF0',express:'DEDEDE',dotnet:'A07BE0',django:'44B78B',openjdk:'E76F00',css:'A97BDB',php:'8F93D6',nextdotjs:'DEDEDE',rust:'DEDEDE',apachekafka:'DEDEDE',jsonwebtokens:'DEDEDE',wireguard:'E05A5F',mariadb:'C49A6C',flutter:'54C5F8',mysql:'5D9CD6',githubactions:'4C9EFF',k3s:'FFC61C',mapbox:'DEDEDE',linux:'FCC624',openid:'F78C40'};
-  var L = {nextdotjs:'171717',express:'171717',openjdk:'B35A00',rust:'171717',apachekafka:'171717',jsonwebtokens:'171717',react:'087EA4',linux:'171717',k3s:'171717',tailwindcss:'0E7490',mapbox:'171717'};
+  var D = {postgresql:'6B8FF0',pandas:'8C7BE0',sqlite:'4FA3D9',express:'DEDEDE',dotnet:'A07BE0',django:'44B78B',openjdk:'E76F00',css:'A97BDB',php:'8F93D6',nextdotjs:'DEDEDE',rust:'DEDEDE',apachekafka:'DEDEDE',jsonwebtokens:'DEDEDE',wireguard:'E05A5F',mariadb:'C49A6C',flutter:'54C5F8',mysql:'5D9CD6',githubactions:'4C9EFF',k3s:'FFC61C',mapbox:'DEDEDE',linux:'FCC624',openid:'F78C40'};
+  var L = {nextdotjs:'171717',pandas:'150458',express:'171717',openjdk:'B35A00',rust:'171717',apachekafka:'171717',jsonwebtokens:'171717',react:'087EA4',linux:'171717',k3s:'171717',tailwindcss:'0E7490',mapbox:'171717'};
   function recolor() {
     var map = light && light.matches ? L : D;
     document.querySelectorAll('img[data-slug]').forEach(function (i) {
